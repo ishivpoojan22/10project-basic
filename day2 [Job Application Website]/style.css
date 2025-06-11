@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  /* background: #000; */
+}
+.content_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+}
+.title_small {
+  font-size: 20px;
+}
+
+.form_container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline-color: red;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+button{
+    background-color: red;
+    border:transparent solid red;
+    padding:6px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color:white;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    border:2px solid red;
+    color:black;
+    transition: 0.3s ease-in;
+}
+.address_text{
+    grid-column: 1 / span 2;
+}
+.address_text textarea{
+    width:100%;
+}
+@media (max-width:460px){
+    .address_text{
+    grid-column: 1 / span 1;
+}
+/* .address_text textarea{
+    width:100%;
+}
+     */
+}
